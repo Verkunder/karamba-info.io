@@ -1,0 +1,52 @@
+<header>
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse.collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="navbar-brand">
+            {% if site.lang == site.default_lang %}
+            <a href="/"><h1>Karamba</h1></a>
+              {% else %}
+              <a href="/ru/"><h1>Karamba</h1></a>
+            {% endif %}
+          </div>
+        </div>
+
+        <div class="navbar-collapse collapse">
+          <div class="menu">
+            <ul class="nav nav-tabs" role="tablist">
+              {% if site.lang == site.default_lang %}
+              <li role="presentation"><a href="{{ site.baseurl_root }}/" class="active">{% t menu.home %}</a></li>
+              <li role="presentation"><a href="{{ site.baseurl_root }}/news/">{% t menu.news %}</a></li>
+              <li role="presentation"><a href="{{ site.baseurl_root }}/pricing/">{% t menu.pricing %}</a></li>
+              <li role="presentation"><a href="{{ site.baseurl_root }}/support/">{% t menu.contact %}</a></li>
+              <li role="presentation"><a href="{{ site.baseurl_root }}/login/">{% t menu.registration %}</a></li>
+              <li role="presentation"><a href="{{ site.baseurl_root }}/entrance/">{% t menu.login %}</a></li>
+              {% else %}
+              <li role="presentation"><a href="{{ site.baseurl_root }}/ru/" class="active">{% t menu.home %}</a></li>
+              <li role="presentation"><a href="{{ site.baseurl_root }}/ru/news/">{% t menu.news %}</a></li>
+              <li role="presentation"><a href="{{ site.baseurl_root }}/ru/pricing/">{% t menu.pricing %}</a></li>
+              <li role="presentation"><a href="{{ site.baseurl_root }}/ru/support/">{% t menu.contact %}</a></li>
+              <li role="presentation"><a href="{{ site.baseurl_root }}/ru/login/">{% t menu.registration %}</a></li>
+              <li role="presentation"><a href="{{ site.baseurl_root }}/ru/entrance/">{% t menu.login %}</a></li>
+              {% endif %}
+              {% if site.lang == site.default_lang %}
+              <li ><a href="{{ site.baseurl_root }}/ru{{ page.url }}">Русский</a></li>
+              {% else %}
+              <li ><a href="{{ site.baseurl_root }}{{ page.url }}">English</a></li>
+              {% endif %}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="app"></div>
+  </nav>
+
+</header>

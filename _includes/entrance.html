@@ -1,0 +1,40 @@
+<h1 style="color: black">{% t register.form.login%}</h1>
+<div class="container">
+  <div class="row justify-content-center align-items-center" style="height:100vh">
+    <div class="col-4">
+      <div class="card">
+        <div class="card-body">
+          <form data-toggle="validator" role="form">
+            <div class="form-group">
+              <label for="inputEmail" class="cols-sm-2 control-label">{% t register.form.email%}</label>
+              <div class="cols-sm-10">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+                  <input type="email" class="form-control" id="inputEmail" placeholder="Email" data-error="{% t register.form.sobe%}" required>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputPassword" class="control-label">{% t register.form.password%}</label>
+              <div class="cols-sm-10">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                  <input type="password" data-minlength="6" class="form-control" id="inputPassword" placeholder="Password" required>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">{% t menu.login %}</button>
+            <br>
+            {% if site.lang == site.default_lang %}
+            <a href="{{ site.baseurl_root }}/login/">{% t menu.registration %}</a>
+            {% else %}
+            <a href="{{ site.baseurl_root }}/ru/login/">{% t menu.registration %}</a>
+            {% endif %}
+            <br>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

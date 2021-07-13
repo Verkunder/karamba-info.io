@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html class="" lang="en">
+<head>
+  {% include head.html %}
+  <meta charset="utf-8">
+  <title>{% t menu.home %}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+{% include navigation.html %}
+<br>
+<center><img src="{{ site.baseurl_root }}/assets/logo.png" height="650" width="70%"/></center>
+<br>
+<div class="col-md-12 text-center">
+  {%tf text.md %}
+</div>
+<br>
+<br>
+<div class="col-md-12 text-center">
+ {%tf work.md %}
+</div>
+
+<br>
+<br>
+
+<div class="box">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+
+        <div class="box-part text-center">
+
+
+          <div class="title">
+            <h3>{% t home.form.webrtc%}</h3>
+          </div>
+
+          <div class="text">
+            <span>{%tf webrtc.md %}</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+
+        <div class="box-part text-center">
+
+
+          <div class="title">
+            <h3>{% t home.form.multiplatform%}</h3>
+          </div>
+
+          <div class="text">
+            <span>{%tf multiplatform.md %}</span>
+          </div>
+
+
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+
+        <div class="box-part text-center">
+
+
+          <div class="title">
+            <h3>{% t home.form.user%}</h3>
+          </div>
+
+          <div class="text">
+            <span>{%tf user.md %}</span>
+          </div>
+
+
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+
+        <div class="box-part text-center">
+
+
+          <div class="title">
+            <h3>{% t home.form.broadcasting%}</h3>
+          </div>
+
+          <div class="text">
+            <span>{%tf broadcasting.md %}</span>
+          </div>
+
+
+        </div>
+      </div>
+
+
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+
+        <div class="box-part text-center">
+
+
+          <div class="title">
+            <h3>{% t home.form.recording%}</h3>
+          </div>
+
+          <div class="text">
+            <span>{%tf recording.md %}</span>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+
+        <div class="box-part text-center">
+
+
+          <div class="title">
+            <h3>{% t home.form.sharing%}</h3>
+          </div>
+
+          <div class="text">
+            <span>{%tf sharing.md %}</span>
+          </div>
+
+        </div>
+      </div>
+     </div>
+  </div>
+</div>
+<br>
+{% include footer.html %}
+</body>
+</html>

@@ -1,0 +1,27 @@
+<section id="news">
+
+  <div class="container">
+    <ul class="box">
+      <div>
+      </div>
+      {% for post in site.posts %}
+      <li>
+        <div>
+          {{ post.excerpt }}
+          <p>
+            <h4>
+            {% if site.lang == site.default_lang %}
+          <a href="{{ post.url }}">{% t labels.more_info %}</a>
+            {% else %}
+            <a href="/{{ site.lang }}{{ post.url }}">{% t labels.more_info %}</a>
+            {% endif %}
+          </h4>
+          </p>
+        </div>
+        <br>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+<!--/#about-->

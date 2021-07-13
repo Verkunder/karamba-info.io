@@ -1,0 +1,60 @@
+<h1 style="color: black">{% t register.form.title%}</h1>
+<div class="container">
+  <div class="row justify-content-center align-items-center" style="height:100vh">
+    <div class="col-4">
+      <div class="card">
+        <div class="card-body">
+          <form data-toggle="validator" role="form" id="register-form" method="post" action="http://localhost:8081/api/user/new">
+            <div class="form-group">
+              <label for="Login" class="cols-sm-2 control-label">{% t register.form.name%}</label>
+              <div class="cols-sm-10">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                  <input type="text" name="login" class="form-control" id="Login" placeholder="username" required maxlength="100">
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="Email" class="cols-sm-2 control-label">{% t register.form.email%}</label>
+              <div class="cols-sm-10">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+                  <input type="email" name="email" class="form-control" id="Email" placeholder="Email" data-error="{% t register.form.sobe%}" required maxlength="100">
+                  <span id="email_warn" class="error text-danger hidden">{% t register.form.errors.1062 %}</span>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+            <label for="Password" class="control-label">{% t register.form.password%}</label>
+              <div class="cols-sm-10">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                  <input type="password" name="password" data-minlength="6" class="form-control" id="Password" placeholder="Password" required maxlength="100">
+                </div>
+              </div>
+            </div>
+        <div class="form-group">
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="agree" id="terms" required>
+              {% if site.lang == site.default_lang %}
+              <a href="/police/">{% t register.form.police%}</a>
+              {% else %}
+              <a href="/ru/police/">{% t register.form.police%}</a>
+              {% endif %}
+            </label>
+              </div>
+            </div>
+            <br>
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary">{% t register.form.button%}</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="lang" class="hidden">{{ site.lang }}</div>
+</div>
+<script src="{{ site.baseurl_root }}/assets/app.js"></script>
+
