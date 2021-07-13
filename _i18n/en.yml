@@ -1,0 +1,60 @@
+global:
+  tagline: English
+menu:
+  home: Home
+  news: News
+  return_to_news: Back to news
+  contact: Contact
+  pricing: Pricing
+  registration: Registration
+  login: Login
+register:
+  form:
+    title: Registration
+    login: Login
+    button: Register
+    name: Username
+    email: Email
+    password: Password
+    conpassword: Confirm password
+    police: I accept the Terms of Service and Privacy Policy.
+    errors:
+      1062: A user with this email address already exists in the system.
+pricing:
+  form:
+   title: Pricing
+   rate: Elementary
+   price: Free
+   users: Conference up to 5 people
+   tran: Live broadcasts on Twitch and Youtube
+   storage: 2 GB in the cloud
+   feed: Video news feed
+   button: Is free
+support:
+  form:
+   title: Support
+   message: Drop Us a Message
+   name: Your Name
+   email: Your Email
+   send: Send Message
+   mes: Your Message
+home:
+  form:
+   title: Home
+   webrtc: WEBRTC
+   open: OPEN SOURCE
+   multiplatform: MULTIPLATFORM
+   user: USE
+   broadcasting: BROADCASTING
+   deploy: EASY TO DEPLOY
+   private: KEEP YOUR VIDEOCONFERENCES PRIVATE
+   recording: RECORDING
+   sharing: SCREEN SHARING
+   tutorials: TUTORIALS/DEMOS AVAILABLE
+   text: Easy videoconference in your web or mobile app
+login:
+  form:
+    button: Enter
+labels:
+  more_info: More info...
+

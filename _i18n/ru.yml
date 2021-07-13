@@ -1,0 +1,60 @@
+global:
+  tagline: Русский
+menu:
+  home: Домой
+  news: Новости
+  return_to_news: Назад к новостям
+  contact: Контакт
+  pricing: Услуги
+  registration: Регистрация
+  login: Логин
+register:
+  form:
+    title: Регистрация
+    login: Логин
+    button: Регистрировать
+    name: Имя пользователя
+    email: Email
+    password: Пароль
+    conpassword: Повторите пароль
+    police: Я принимаю условия пользовательского соглашения.
+    errors:
+      1062: Пользователь с таким email уже существует в системе.
+pricing:
+  form:
+   title: Тарифы
+   rate: Начальный
+   price: Бесплатно
+   users: Конференция до 5-ти человек
+   tran: Прямые трансляции  на Twitch и Youtube
+   storage: 2 ГБ в облаке
+   feed: Лента видеоновостей
+   button: Бесплатно
+support:
+  form:
+   title: Поддержка
+   message: Напишите нам сообщение
+   name: Ваше имя
+   email: Ваш Email
+   send: Отправить сообщение
+   mes: Ваше сообщение
+home:
+  form:
+   title: Home
+   webrtc: WEBRTC
+   open: ОТКРЫТЫЙ ИСХОДНЫЙ КОД
+   multiplatform: МУЛЬТИПЛАТФОРМЕННАЯ
+   user: ИСПОЛЬЗОВАНИЕ
+   broadcasting: ВЕЩАНИЕ
+   deploy: ЛЕГКОЕ ВНЕДРЕНИЕ
+   private: СОХРАНИТЕ ВАШИХ ВИДЕОКОНФЕРЕНЦИЙ
+   recording: ЗАПИСЬ
+   sharing: ДЕМОНСТРАЦИЯ ЭКРАНА
+   tutorials: УЧЕБНЫЕ/ДЕМО ВЕРСИИ
+login:
+  form:
+    button: Войти
+labels:
+  more_info: Подробнее...
+
+
