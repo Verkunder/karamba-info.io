@@ -1,0 +1,54 @@
+name: Flex
+markdown: kramdown
+highlighter: rouge
+
+baseurl: ""
+permalink: /:title/
+
+bootstrap:
+  assets: true
+
+# Plugins
+plugins:
+ - jekyll-multiple-languages-plugin
+ - jekyll-bootstrap-sass
+
+# Permalinks, default is pretty
+permalink:        pretty
+
+highlighter:       pygments
+
+
+# jekyll-multiple-languages-plugin settings:
+languages: ["en", "ru"]
+
+
+# If not config, the first of languages will be the default
+language_default:   'en'
+
+exclude_from_localizations: ["javascript", "images", "css", "scripts", "favicon.ico"]
+
+collections:
+  posts:
+    output: true
+
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - .bundle/
+  - .editorconfig
+  - LICENSE.txt
+  - README.md
+  - CONTRIBUTING.md
+  - CHANDELOG
+  - Makefile
+  - docs
+  - .gitlab
+  - .idea
+  - bootsrap
+  - karamba-info.iml
